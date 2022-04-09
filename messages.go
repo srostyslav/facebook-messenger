@@ -43,6 +43,14 @@ const (
 	NotificationTypeNoPush = NotificationType("NO_PUSH")
 )
 
+type RawMessage struct {
+	Message          map[string]interface{} `json:"message"`
+	Recipient        recipient              `json:"recipient"`
+	NotificationType NotificationType       `json:"notification_type,omitempty"`
+}
+
+func (m RawMessage) foo() {} // Message interface
+
 // TextMessage struct used for sending text messages to messenger
 type TextMessage struct {
 	Message          textMessageContent `json:"message"`
