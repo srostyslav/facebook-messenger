@@ -7,7 +7,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/mileusna/facebook-messenger"
+	messenger "github.com/srostyslav/facebook-messenger"
 )
 
 var fs *httptest.Server

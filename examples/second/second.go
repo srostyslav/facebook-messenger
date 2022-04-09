@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/mileusna/facebook-messenger"
+	messenger "github.com/srostyslav/facebook-messenger"
 )
 
 // use public messenger for simpler code demonstration
